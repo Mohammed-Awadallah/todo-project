@@ -1,55 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./style/index.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./style/index.css">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
+
 <body>
-    
-<header>  
 
-<img  src="./assets/logo.png" style="padding-left: 40% ;" alt="Logo" >
-<p style="margin-left: 45% ;"> ToDo  </p>
-<a  href="./index.html" style="margin-left: 44%;">Home</a> <a  href="./about.html" style="margin-right: 15%;">About</a>
+  <header class="header-fixed">
 
+    <div class="header-limiter">
 
-</header>
+      <h1><a href="./">Todo<span>logo</span></a></h1>
 
-<main>
-    <table style="width: 50% ; margin-left: 25%; margin-top: 5%;">
-        <tr>
-            <th>Task</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Drawing Wireframe</td>
-            <td>Done!</td>
-        </tr>
-        <tr><td>Converting Wireframe</td>
-        <td>Done!</td></tr>
-        <tr>
-            <td>Finising Task</td>
-            <td>In Progress...</td>
-        </tr>
-        <tr>
-            <td>Going To bed</td>
-            <td> Not gonna Happen!</td>
-        </tr>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+
+      </nav>
+
+    </div>
+
+  </header>
+  <div class="header-fixed-placeholder"></div>
+  <main>
+    <h1 id="Todolist">ToDo List</h1>
+    <table style="width: 50% ; margin-left: 24%;">
+      <tr>
+        <th>List</th>
+
+        <th>Status </th>
+      </tr>
+      <tr>
+        <td> Drawing Wireframe <input type="checkbox"> </td>
+        <td>
+          <div class="w3-light-grey">
+            <div class="w3-green" style="height:24px;width:100%"></div>
+          </div><br>
+
+        </td>
+
+      </tr>
+      <tr>
+        <td>Converting Wireframe <input type="checkbox"> </td>
+        <td>
+          <div class="w3-light-grey">
+            <div class="w3-red" style="height:24px;width:100%"></div>
+          </div><br>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Finising Task <input type="checkbox"> </td>
+        <td>
+          <div class="w3-light-grey">
+            <div class="w3-red" style="height:24px;width:100%"></div>
+          </div><br>
+        </td>
+
+      </tr>
+      <tr>
+        <td>Going to bed <input type="checkbox"> </td>
+
+        <td>
+          <div class="w3-light-grey">
+            <div class="w3-red" style="height:24px;width:100%"></div>
+          </div><br>
+        </td>
+
+        </td>
+      </tr>
     </table>
 
-     </main>
+  </main>
 
 
-<footer>
-  
-    <p style="margin-top: 10%; font-family: fantasy; color: aqua;">Created by Mohammed Awadallah © 2022</p>
-    
+  <footer style="background:#777; text-align: center;  padding: 1.5%; margin-top: 31px;">
 
-</footer>
-    
-    
+
+    <p class="cp-text">
+      © Copyright 2022 ASAC. All rights reserved.
+    </p>
+
+
+  </footer>
+
+
 </body>
+
 </html>
