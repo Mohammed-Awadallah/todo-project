@@ -24,11 +24,12 @@
 // }
 
 function arrPush(arr , answer){
-    if(answer != "no" && answer != "yes"){
-        arr.push("invalid");
+    if(answer == "no"|| answer == "yes"){
+        
+        arr.push(answer);
     }
     else{
-        arr.push(answer);
+        arr.push("invalid");
     }
     
 }
